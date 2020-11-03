@@ -457,10 +457,10 @@ main
     box-shadow: 0px 0px 2px 0px #8e8e8e;
 }
     .sub_T .head_1 th{
-      background-color: rgba(226 226 226);
+      background-color: rgb(243 237 222);
     }
     .sub_T .head_2 th {
-    background-color: rgba(226 226 226);
+    background-color: rgb(243 237 222);
 }
     .sub_T td, .sub_T th {
       border: 1px solid #c3c3c3;
