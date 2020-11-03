@@ -444,7 +444,7 @@ main
         position: sticky;
         top: 0px;
         z-index: 999;
-        outline: 1px solid #8e8c8c;
+        /*outline: 1px solid #8e8c8c;*/
         font-size: 13px;
         box-shadow: 0px 0px 2px 0px #8e8e8e;
     }
@@ -452,14 +452,16 @@ main
     position: sticky;
     top: 25px;
     z-index: 999;
-    outline: 1px solid #8e8c8c;
+    /*outline: 1px solid #8e8c8c;*/
     font-size: 13px;
     box-shadow: 0px 0px 2px 0px #8e8e8e;
-    background-color: rgba(226 226 226);
 }
     .sub_T .head_1 th{
       background-color: rgba(226 226 226);
     }
+    .sub_T .head_2 th {
+    background-color: rgba(226 226 226);
+}
     .sub_T td, .sub_T th {
       border: 1px solid #c3c3c3;
     }
