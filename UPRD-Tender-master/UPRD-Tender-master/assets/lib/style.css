@@ -1,0 +1,157 @@
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+.mlr_15{
+  margin: 0px -15px;
+}
+@font-face {
+    font-family: 'CoHeadlineW23-ArabicBold';
+    src: url('CoHeadlineW23ArabicBold.ttf');
+}
+.ff-arabic{
+  font-family: "CoHeadlineW23-ArabicBold"!important;
+  text-shadow: 0px 0px 0px rgba(0,0,0,0.3);
+}
+.ff-tahoma{
+  font-family: "Tahoma", Sans-serif;
+  text-shadow: 0px 0px 0px rgba(0,0,0,0.3);
+}
+.ff-roboto{
+  font-family: 'Roboto', sans-serif;
+}
+.sd{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+ }
+.sd2{
+  box-shadow: 0px 1.5px 3px 0px rgba(0, 0, 0, 0.16);
+  transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+}   
+.bg_darkblue{
+  background: #1C2346; 
+}
+.bg_lightgray{
+  background: #F5F7F8; 
+}
+.bg_lightskyblue{
+  background: #E8F0FD; 
+}
+.text_lightblue{
+  color: #547ead;
+}
+.text_darkblue{
+  color: #1C2346;
+}
+.text_lightgray{
+  color: #4b5156;
+}
+.fs-12{font-size: 12px!important;}
+.fs-13{font-size: 13px!important;}
+.fs-14{font-size: 14px!important;}
+.fs-16{font-size: 16px!important;}
+.fs-18{font-size: 18px!important;}
+.fs-20{font-size: 20px!important;}
+.fw-400{font-weight: 400;}
+.fw-800{font-weight: 800;}
+.fw-bold{font-weight: bold;}
+/*--------------------------------------------------------------
+# Preloader
+--------------------------------------------------------------*/
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+  overflow: hidden;
+  background: #fff;
+}
+
+#preloader:before {
+  content: "";
+  position: fixed;
+  top: calc(50% - 30px);
+  left: calc(50% - 30px);
+  border: 6px solid #3fbbc0;
+  border-top-color: #ecf8f9;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  -webkit-animation: animate-preloader 1s linear infinite;
+  animation: animate-preloader 1s linear infinite;
+}
+
+@-webkit-keyframes animate-preloader {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes animate-preloader {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/*----------------------------------
+header
+-----------------------------------*/
+.logo_left{
+  text-align: left;
+}
+.logo_center{
+  text-align: center;
+}
+.logo_right{
+  text-align: right;
+}
+
+@media (max-width: 767.98px){
+ .logo_left{
+  text-align: center;
+}
+.logo_left img{
+  height: 28px!important;
+  width: auto;
+}
+.logo_center h3{
+  text-align: center;
+  font-size: 16px;
+}
+.logo_right{
+  text-align: center;
+} 
+.logo_right img{
+  height: 28px!important;
+  width: auto;
+} 
+}
+/*----------------------------------
+main
+-----------------------------------*/
+.card1{
+  background-color: #ffffff;
+  background-image: url(../images/our-services-bg-01@3x.png);
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-size: 70% auto;
+}
+.card2{
+  background-color: #ffffff;
+  background-image: url(../images/our-services-bg-02@3x.png);
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  background-size: 70% auto;
+}
+.card3{
+  background-color: #ffffff;
+  background-image: url(../images/our-services-bg-03@3x.png);
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-size: 70% auto;
+}
