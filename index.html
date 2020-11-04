@@ -44,7 +44,7 @@
   <link rel="stylesheet" type="text/css" href="assets/lib/style.css">
   <link rel="manifest" href="assets/lib/manifest.json">
   <style type="text/css">
-    
+
   </style>
 </head>
 <body>
@@ -74,19 +74,19 @@
               <li>
                   <a href="#">
                       <i class="fas fa-image"></i>
-                      SFDA
+                      Product
                   </a>
               </li>
               <li>
                   <a href="#">
                       <i class="fas fa-question"></i>
-                      MDMA
+                      Oder
                   </a>
               </li>
               <li>
                   <a href="#">
                       <i class="fas fa-paper-plane"></i>
-                      Quotation
+                      Service
                   </a>
               </li>
           </ul>
@@ -100,7 +100,7 @@
               <div class="container-fluid">
 
                   <button type="button" id="sidebarCollapse" class="btn btn-info btn-sm m-0">
-                      <span><i class="fas fa-chevron-left"></i></span>
+                      <span class="w-100 h-100"><i class="fas fa-chevron-left rotate"></i></span>
                   </button>
                   <button class="btn btn-dark d-inline-block d-lg-none btn-sm ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                       <i class="fas fa-align-justify"></i>
@@ -117,8 +117,8 @@
           </nav>
         </div><!-- ====================close ==================-->
 
-        <section class="main mlr_15" style="height: 68vh;background: #fbfbfb;overflow-y: auto;">
-          <div class="row mx-0 py-4">
+        <section class="main mlr_15 mx-3" style="">
+          <div class="row mx-0 py-4 mx-2">
               
             <!-- ====================close ==================-->
             <div class="table-responsive res_mainT">
@@ -433,6 +433,9 @@
               $('#sidebar').toggleClass('active');
           });
       });
+      $("#sidebarCollapse .rotate").click(function () {
+          $(this).toggleClass("down");
+      })
   </script>
 </body>
 </html>

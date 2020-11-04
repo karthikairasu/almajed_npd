@@ -1,6 +1,9 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+body{
+  background: #ecf0f4;
+}
 .mlr_15{
   margin: 0px -15px;
 }
@@ -191,7 +194,7 @@ main
         border-radius: 0;
         margin: 0px -20px 0px -20px;
         margin-bottom: 30px;
-        box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+        /*box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);*/
         border: 2px solid transparent;
     }
 
@@ -228,6 +231,7 @@ main
         background: #3A4B55;
         color: #fff;
         transition: all 0.3s;
+        box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
     }
 
     #sidebar.active {
@@ -423,12 +427,38 @@ main
     .sd{
       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
      }
+    #sidebarCollapse .rotate {
+    -moz-transition: all .5s linear;
+    -webkit-transition: all .5s linear;
+    transition: all .5s linear;
+    }
+    #sidebarCollapse .rotate.down {
+      -moz-transform:rotate(180deg);
+      -webkit-transform:rotate(180deg);
+      transform:rotate(180deg);
+    }
+    #sidebarCollapse{
+      padding: 0px!important;
+    }
+    #sidebarCollapse .rotate{
+      padding: .5rem 1.6rem;
+      font-weight: bold;
+      font-size: .80rem;
+    }
      /*----------------------------------
      table style
      -----------------------------------*/
+     .main{
+      height: 58vh;
+      overflow-y: auto;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 0 28px rgba(0,0,0,.08);
+     }
      .res_mainT{
       padding: .10rem .45rem;
       height: 49vh;
+      border-bottom: 1px solid #dee2e6;
      }
      .sub_T{
       margin-bottom: 0px;
